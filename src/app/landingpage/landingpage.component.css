@@ -1,0 +1,31 @@
+/* Styling for Navigation */
+a {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #ff7f50; /* Light orange */
+  }
+  
+  .container {
+    max-width: 1850px;
+  }
+  
+  /* Modern Style Enhancements */
+#logo-sidebar {
+    background: #fff;
+    border-right: 1px solid #e5e7eb;
+  }
+  
+  #logo-sidebar a:hover {
+    color: #ef6c00;
+  }
+  
+  #logo-sidebar svg {
+    transition: all 0.3s ease;
+  }
+  
+  #logo-sidebar li a:hover svg {
+    transform: scale(1.1);
+  }
+  

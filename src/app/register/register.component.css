@@ -1,0 +1,13 @@
+/* Styling for Navigation */
+a {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #ff7f50; /* Light orange */
+  }
+  
+  .container {
+    max-width: 1850px;
+  }
+  
