@@ -29,3 +29,6 @@ a {
     transform: scale(1.1);
   }
 
+  .pr-16 {
+    padding-left: 30rem;
+}
