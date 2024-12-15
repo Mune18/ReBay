@@ -1,0 +1,83 @@
+/* Styling for Navigation */
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff7f50; /* Light orange */
+}
+
+.container {
+  max-width: 1850px;
+}
+
+/* Modern Style Enhancements */
+#logo-sidebar {
+  background: #fff;
+  border-right: 1px solid #e5e7eb;
+}
+
+#logo-sidebar a:hover {
+  color: #ef6c00;
+}
+
+#logo-sidebar svg {
+  transition: all 0.3s ease;
+}
+
+#logo-sidebar li a:hover svg {
+  transform: scale(1.1);
+}
+  
+/* Utility styles for layout enhancement */
+.bg-gray-100 {
+    background-color: #f3f4f6;
+  }
+  
+  .text-orange-500 {
+    color: #f97316;
+  }
+  
+  button:hover {
+    cursor: pointer;
+  }
+  
+  .text-orange-500 {
+    color: #f97316;
+  }
+  
+  .bg-white {
+    background-color: #ffffff;
+  }
+  
+  .shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+  
+  .rounded-lg {
+    border-radius: 0.5rem;
+  }
+  
+  .p-4 {
+    padding: 1rem;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+
+  /* Utility Enhancements */
+.container {
+    max-width: 1200px;
+  }
+  .bg-gray-100 {
+    background-color: #f9fafb;
+  }
+  .text-orange-500 {
+    color: #f97316;
+  }
+  button:hover {
+    cursor: pointer;
+  }
+  
+  

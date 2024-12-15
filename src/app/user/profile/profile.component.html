@@ -1,0 +1,192 @@
+<!-- Top Navigation Bar -->
+<nav class="bg-white shadow-md">
+    <div class="mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="text-2xl font-bold text-orange-500">Rebay</a>
+      <div class="flex items-center space-x-3 rtl:space-x-reverse">
+        <button type="button" class="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300">
+          <span class="sr-only">Open user menu</span>
+          <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-3.jpg" alt="User">
+        </button>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Profile Page -->
+  <div class="bg-gray-100 min-h-screen py-16">
+    <!-- Back Button -->
+    <div class="absolute top-20 left-5 flex items-center space-x-2">
+      <button class="bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-5 h-5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+      <span class="text-black-900 text-lg font-bold">Profile</span>
+    </div>
+  
+    <!-- Seller's Dashboard -->
+    <div class="container mx-auto px-6 ">
+      <div class="flex flex-col md:flex-row items-center bg-white shadow-lg rounded-lg p-6 mb-6">
+        <img class="w-24 h-24 rounded-full mb-4 md:mb-0 md:mr-6" src="/docs/images/people/profile-picture-3.jpg" alt="User Profile">
+        <div>
+          <h1 class="text-2xl font-bold text-gray-800">John Doe</h1>
+          <p class="text-sm text-gray-600">Experienced seller specializing in electronics and accessories.</p>
+          <p class="mt-2 text-sm text-gray-500">📍 Olongapo City</p>
+          <div class="flex items-center space-x-2 mt-4">
+            <span class="bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full">Verified Seller</span>
+            <span class="text-sm text-gray-600">Joined: January 2023</span>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Analytics Section -->
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-6">
+        <!-- Individual Cards -->
+        <div class="bg-white shadow-lg rounded-lg p-4 text-center">
+          <h3 class="text-xl font-bold text-gray-800">Total Revenue</h3>
+          <p class="text-orange-500 text-2xl">$1200</p>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg p-4 text-center">
+          <h3 class="text-xl font-bold text-gray-800">Items Sold</h3>
+          <p class="text-orange-500 text-2xl">15</p>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg p-4 text-center">
+          <h3 class="text-xl font-bold text-gray-800">Orders Fulfilled</h3>
+          <p class="text-orange-500 text-2xl">95%</p>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg p-4 text-center">
+          <h3 class="text-xl font-bold text-gray-800">Average Rating</h3>
+          <p class="text-orange-500 text-2xl">4.8 ⭐</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-6">
+        <!-- Average Selling Price -->
+        <div class="bg-white shadow-lg rounded-lg p-4 text-center">
+          <h3 class="text-xl font-bold text-gray-800">Average Selling Price</h3>
+          <p class="text-orange-500 text-2xl">$80</p>
+        </div>
+        <!-- Most Viewed Item -->
+        <div class="bg-white shadow-lg rounded-lg p-4 text-center">
+          <h3 class="text-xl font-bold text-gray-800">Most Viewed Item</h3>
+          <p class="text-orange-500 text-lg">"Smartphone X" (150 views)</p>
+        </div>
+        <!-- Response Time -->
+        <div class="bg-white shadow-lg rounded-lg p-4 text-center">
+          <h3 class="text-xl font-bold text-gray-800">Response Time</h3>
+          <p class="text-orange-500 text-2xl">1.5 hrs</p>
+        </div>
+        <!-- Total Spend -->
+        <div class="bg-white shadow-lg rounded-lg p-4 text-center">
+            <h3 class="text-xl font-bold text-gray-800">Total Spend</h3>
+            <p class="text-orange-500 text-2xl">$500</p>
+        </div>
+      </div>
+  
+      <!-- Items for Sale Section -->
+    <div class="bg-white shadow-lg rounded-lg p-6 mb-6">
+      <h2 class="text-2xl font-bold text-gray-800 mb-4">Active Selling Items</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Item Card -->
+        <div class="border rounded-lg p-4 flex flex-col">
+          <img class="h-40 w-full object-cover rounded-md mb-4" src="/path-to-item.jpg" alt="Item">
+          <h3 class="text-lg font-bold text-gray-800">Item Title</h3>
+          <p class="text-sm text-gray-500">$50</p>
+          <div class="mt-auto flex justify-end space-x-2">
+            <button class="text-gray-500 hover:text-gray-800">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.232 9.232L9.232 15.232M15.232 15.232L9.232 9.232" />
+              </svg>
+            </button>
+            <button class="text-gray-500 hover:text-gray-800">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 10h16M4 14h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <!-- Add more items as needed -->
+         <!-- Item Card -->
+        <div class="border rounded-lg p-4 flex flex-col">
+            <img class="h-40 w-full object-cover rounded-md mb-4" src="/path-to-item.jpg" alt="Item">
+            <h3 class="text-lg font-bold text-gray-800">Item Title</h3>
+            <p class="text-sm text-gray-500">$50</p>
+            <div class="mt-auto flex justify-end space-x-2">
+              <button class="text-gray-500 hover:text-gray-800">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.232 9.232L9.232 15.232M15.232 15.232L9.232 9.232" />
+                </svg>
+              </button>
+              <button class="text-gray-500 hover:text-gray-800">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 10h16M4 14h16M4 18h16" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <!-- Add more items as needed -->
+           <!-- Item Card -->
+        <div class="border rounded-lg p-4 flex flex-col">
+            <img class="h-40 w-full object-cover rounded-md mb-4" src="/path-to-item.jpg" alt="Item">
+            <h3 class="text-lg font-bold text-gray-800">Item Title</h3>
+            <p class="text-sm text-gray-500">$50</p>
+            <div class="mt-auto flex justify-end space-x-2">
+              <button class="text-gray-500 hover:text-gray-800">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.232 9.232L9.232 15.232M15.232 15.232L9.232 9.232" />
+                </svg>
+              </button>
+              <button class="text-gray-500 hover:text-gray-800">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 10h16M4 14h16M4 18h16" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <!-- Add more items as needed -->
+           <!-- Item Card -->
+        <div class="border rounded-lg p-4 flex flex-col">
+          <img class="h-40 w-full object-cover rounded-md mb-4" src="/path-to-item.jpg" alt="Item">
+          <h3 class="text-lg font-bold text-gray-800">Item Title</h3>
+          <p class="text-sm text-gray-500">$50</p>
+          <div class="mt-auto flex justify-end space-x-2">
+            <button class="text-gray-500 hover:text-gray-800">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.232 9.232L9.232 15.232M15.232 15.232L9.232 9.232" />
+              </svg>
+            </button>
+            <button class="text-gray-500 hover:text-gray-800">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 10h16M4 14h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <!-- Add more items as needed -->
+          <!-- Add more items as needed -->
+        
+        </div>
+      </div>
+  
+      <!-- Reviews and Feedback -->
+      <div class="bg-white shadow-lg rounded-lg p-6 mb-6">
+        <h2 class="text-2xl font-bold text-gray-800 mb-4">Reviews and Feedback</h2>
+        <div>
+          <p class="text-sm text-gray-600">"Great seller! Quick response and excellent product quality." - Jane D.</p>
+          <p class="text-sm text-gray-600 mt-2">"Fast shipping, highly recommended!" - Mark T.</p>
+        </div>
+      </div>
+  
+      <!-- Seller Policies and About Section -->
+      <div class="bg-white shadow-lg rounded-lg p-6">
+        <h2 class="text-2xl font-bold text-gray-800 mb-4">About & Policies</h2>
+        <p class="text-sm text-gray-600 mb-4">
+          "I strive to provide high-quality second-hand electronics. All items are tested and verified before listing."
+        </p>
+        <h3 class="text-lg font-semibold text-gray-800">Return Policy</h3>
+        <p class="text-sm text-gray-600">
+          Returns are accepted within 7 days for items that are defective or not as described.
+        </p>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,122 @@
+<!-- Top Navigation Bar -->
+<nav class="bg-white shadow-md">
+    <div class="mx-auto px-6 py-4 flex items-center justify-between">
+      <!-- Logo Section (Left Corner) -->
+      <a href="#" class="text-2xl font-bold text-orange-500">Rebay</a>
+  
+      <!-- User Menu (Right Corner) -->
+      <div class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+        <button type="button" class="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom">
+          <span class="sr-only">Open user menu</span>
+          <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-3.jpg" alt="user photo">
+        </button>
+  
+        <!-- Dropdown Menu -->
+        <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600" id="user-dropdown">
+          <div class="px-4 py-3">
+            <span class="block text-sm text-gray-900 dark:text-white">Bonnie Green</span>
+            <span class="block text-sm text-gray-500 truncate dark:text-gray-400">nameflowbite.com</span>
+          </div>
+          <ul class="py-2" aria-labelledby="user-menu-button">
+            <li><a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Profile</a></li>
+            <li><a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a></li>
+          </ul>
+        </div>
+  
+        <button data-collapse-toggle="navbar-user" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-user" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+<!-- Inbox Page -->
+<section class="container mx-auto px-6 py-6">
+    <!-- Back Button -->
+    <div class="absolute top-20 left-5 flex items-center space-x-2">
+        <button class="bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700" (click)="closeChat()">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-5 h-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+            </svg>
+        </button>
+    </div>
+    <!-- Page Title -->
+    <h2 class="text-3xl font-bold text-gray-800 mb-4">Inbox</h2>
+    
+    <!-- Message List -->
+    <div class="space-y-4">
+        <!-- Message Item -->
+        <div class="flex items-center justify-between p-4 bg-white shadow-md rounded-lg hover:bg-gray-50" (click)="openChat('John Doe', 'Seller')">
+            <div class="flex items-center space-x-3">
+                <!-- Sender's Image/Icon -->
+                <div class="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center">
+                    <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-3.jpg" alt="Sender">
+                </div>
+                <!-- Message Content -->
+                <div class="flex flex-col">
+                    <span class="text-sm font-medium text-gray-800">Seller: John Doe</span>
+                    <span class="text-xs text-gray-500">Subject: Item Inquiry</span>
+                    <p class="text-sm text-gray-600 truncate w-72">Hi, I am interested in your product. Can you tell me more about it?</p>
+                </div>
+            </div>
+            <!-- Mark as Read Button -->
+            <button class="text-orange-500 hover:text-orange-700">Mark as Read</button>
+        </div>
+
+        <!-- Another Message Item -->
+        <div class="flex items-center justify-between p-4 bg-white shadow-md rounded-lg hover:bg-gray-50" (click)="openChat('Jane Smith', 'Buyer')">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+                    <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-2.jpg" alt="Sender">
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-sm font-medium text-gray-800">Buyer: Jane Smith</span>
+                    <span class="text-xs text-gray-500">Subject: Order Update</span>
+                    <p class="text-sm text-gray-600 truncate w-72">Your order has been shipped. Please check your tracking details.</p>
+                </div>
+            </div>
+            <button class="text-orange-500 hover:text-orange-700">Mark as Read</button>
+        </div>
+    </div>
+
+    <!-- Load More Messages Button -->
+    <div class="flex justify-center mt-6">
+        <button class="px-4 py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600">Load More</button>
+    </div>
+</section>
+
+<!-- Chat Box (Hidden Initially) -->
+<div class="fixed bottom-5 right-5 w-96 bg-white shadow-lg rounded-lg p-4" *ngIf="chatOpen">
+    <div class="flex items-center justify-between border-b pb-2 mb-4">
+        <span class="text-lg font-semibold">{{ chatUserName }} - {{ chatUserRole }}</span>
+        <button class="text-gray-600 hover:text-gray-800" (click)="closeChat()">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-5 h-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+    </div>
+
+    <!-- Chat Messages -->
+    <div class="space-y-4 mb-4 h-72 overflow-auto">
+        <div *ngFor="let message of messages">
+            <div class="flex space-x-3">
+                <div class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center">
+                    <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-3.jpg" alt="User">
+                </div>
+                <div class="bg-gray-100 p-2 rounded-lg max-w-xs">
+                    <p class="text-sm text-gray-800">{{ message }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Message Input -->
+    <div class="flex items-center space-x-2">
+        <input type="text" [(ngModel)]="newMessage" class="w-full border p-2 rounded-lg" placeholder="Type a message">
+        <button class="bg-orange-500 text-white p-2 rounded-full" (click)="sendMessage()">Send</button>
+    </div>
+</div>
+

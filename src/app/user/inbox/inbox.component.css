@@ -1,0 +1,177 @@
+/* Styling for Navigation */
+a {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #ff7f50; /* Light orange */
+  }
+  
+  .container {
+    max-width: 1850px;
+  }
+  
+  /* Modern Style Enhancements */
+#logo-sidebar {
+    background: #fff;
+    border-right: 1px solid #e5e7eb;
+  }
+  
+  #logo-sidebar a:hover {
+    color: #ef6c00;
+  }
+  
+  #logo-sidebar svg {
+    transition: all 0.3s ease;
+  }
+  
+  #logo-sidebar li a:hover svg {
+    transform: scale(1.1);
+  }
+  
+  .md\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-left: 25vh;
+}
+
+/* Inbox Item Styling */
+.inbox-item {
+    background-color: white;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.inbox-item:hover {
+    background-color: #f9f9f9;
+    transform: scale(1.02);
+}
+
+.inbox-item .sender-img {
+    width: 40px;
+    height: 40px;
+    background-color: #f4f4f4;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inbox-item .sender-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.inbox-item .message-content {
+    margin-left: 15px;
+}
+
+.inbox-item .message-content span:first-child {
+    font-weight: 600;
+    color: #333;
+}
+
+.inbox-item .message-content span:last-child {
+    color: #777;
+    font-size: 12px;
+}
+
+.inbox-item .message-content p {
+    font-size: 14px;
+    color: #333;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.inbox-item .mark-read {
+    color: #ff7f50;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.inbox-item .mark-read:hover {
+    color: #d16e3b;
+}
+
+/* Load More Button */
+.load-more-btn {
+    background-color: #ff7f50;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.load-more-btn:hover {
+    background-color: #d16e3b;
+}
+
+/* Utility styles for layout enhancement */ 
+  .p-4 {
+    padding: 1rem;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+
+  /* Utility Enhancements */
+.container {
+    max-width: 1200px;
+  }
+  
+/* Chat Box Styling */
+.chat-box {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 350px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    z-index: 1000;
+}
+
+.chat-box .message {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    margin-bottom: 10px;
+}
+
+.chat-box .message.sent {
+    background-color: #ff7f50;
+    color: white;
+    text-align: right;
+}
+
+.chat-box .message.received {
+    background-color: #e5e5e5;
+    color: black;
+}
+
+.chat-box input[type="text"] {
+    padding: 10px;
+    width: 80%;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+}
+
+.chat-box button {
+    padding: 10px 20px;
+    background-color: #ff7f50;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.chat-box button:hover {
+    background-color: #d16e3b;
+}
